@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Justify-self</title>
+    <style>
+        .grid-container {
+            width: 100%;
+            min-height: 300px;
+            background-color: burlywood;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+            grid-gap: 10px;
+        }
+
+        .base-item {
+            width: 90px;
+            height: 90px;
+            border-radius: 3px;
+        }
+        .item1 {
+            background: LightSkyBlue;
+            justify-self : center;
+        }
+
+        .item2 {
+            background: LightSalmon;
+            justify-self: start;
+        }
+
+        .item3 {
+            background: PaleTurquoise;
+            justify-self: start;
+        }
+
+        .item4 {
+            background: LightPink;
+            justify-self: end;
+        }
+
+        .item5 {
+            background: PaleGreen;
+            justify-self: start;
+        }
+
+        .item6 {
+            background: blue ;
+            justify-self: center ;
+        }
+
+        
+    </style>
+</head>
+
+<body>
+    <header></header>
+    <p>Al estar en el emparrillado cada elemento se puede disponer de una forma u otra, por default la dispocicion es
+        Stresh</p>
+
+    <div class="grid-container">
+        <div class="base-item item1">1</div>
+        <div class="base-item item2">2</div>
+        <div class="base-item item3">3</div>
+        <div class="base-item item4">4</div>
+        <div class="base-item item5">5</div>
+        <div class="base-item item6">6</div>
+    </div>
+</body>
+
+</html>
